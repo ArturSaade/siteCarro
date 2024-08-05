@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<title>Site de Carro</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <style>
+
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+        background-color: #121412;
+        color: azure;
+        padding: 25px;
+    }
+    .site-footer {
+      background-color: #3a3a3a;
+      padding: 45 0 20px;
+      font-size: 15px;
+      line-height: 24px;
+    }
+
+    .site-footer hr.small {
+      margin:20px 0;
+    }
+
+    .site-footer h6 {
+      color:#fff;
+      font-size: 16px;
+      text-transform:uppercase;
+      margin-top: 5px;
+     letter-spacing: 2px;
+    }
+    
+    .site-footer h3 {
+      color:#fff;
+      font-size: 25px;
+      text-transform:uppercase;
+      margin-top: 5px;
+      letter-spacing: 2px;
+    }
+
+    .site-footer a {
+      color:f2f2f2;
+    }
+
+    .site-footera:hover {
+      color:#006633;
+      text-decoration: none;
+    }
+
+    .footer-link {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .footer-links a {
+      color:#006633;
+    }
+
+
+
+    .footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+      color:#006633;
+      text-decoration:none;
+    }
+
+
+    .footer-links.inline li {
+      display:inline-block;
+    }
+
+
+    .site-footer .social-icons a {
+    width:40px;
+    height:40px;
+    line-height:40px;
+    margin-left:6px;
+    margin-right:0;
+    border-radius:100%;
+    background-color:#f2f2f2;
+}
+
+
+copyright-text {
+    margin:0;
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom:30px;
+    }
+}
+@media (max-width:767px) {
+    .site-footer
+    {
+        padding-bottom:0;
+    }
+}
+
+site.footer .copyrinhgt-text,.site-footer .social-icons
+{
+    text-align:center;
+}
+
+
+.social-icon {
+    padding-left:0;
+    margin-bottom:0;
+    list-style:none;
+}
+
+.social-icons li {
+    display:inline-block;
+    margin-bottom:4px;
+}
+
+.social-icons li.title {
+    margin-right:15px;
+    text-transform:uppercase;
+    color:#99E89D;
+    font-weight: 700;
+    font-size:13px;
+}
+
+.social-icons a {
+    background-color:#006633;
+    color: #eceeef;
+    font:size 16px;
+    display:inline-block;
+    line-height:44px;
+    width:44px;
+    width:44px;
+    height: 44px;
+    text-align:center;
+    margin-right:8px;
+    border-radius:100%;
+    -webkit-transition:all .2s linear;
+    -o-transition:all .2s linear;
+    transition:all .2s linear
+}
+
+.social-icon a:active,.social-iconsa:focus,.social-icons :hover {
+    color:#ffffff;   
+}
+
+.social-icons.size-sm a{
+    line-height:34px;
+    height:34px;
+    width:34px;
+    font-size:14xp
+}
+
+.social-icons a.facebook:hover{
+    background-color:#3b5998;
+}
+.facebook{
+    background-color:#3b5998;
+    color:#ffffff;
+}
+
+.social-icons a.twitter:hover{
+background-color:#00aced;
+}
+.twitter{
+    background-color:#00aced; 
+    color:#ffffff;
+}
+.social-icons a.linkedin:hover{
+    background-color:#007bb6;
+    color:#ffffff;
+}
+.linkedin{
+    background-color:#007bb6;
+    color:#ffffff;
+}
+.social-icons a.instagram:hover{
+    background-image: linear-gradient(to right,#fa7e1e, #d62976 ,	#962fbf,#4f5bd5);
+    color: #fdfbfb;
+}
+/*
+.instagram{
+    background-image: linear-gradient(to right,#fa7e1e, #d62976 ,	#962fbf,#4f5bd5);
+    color: #ffffff;
+}*/
+@media (max-width:767px) {
+    .social-icons li.title
+    {
+        display:block;
+        margin-right:0;
+        font-weight:600
+    }
+}
+
+/* Fim do rodapé*/
+        /* Fonte menu texto logo*/
+        @media (max-width:600px) {
+            .fontCel
+            {
+                font-size: 14px; 
+                font-weight:600
+            }
+        }
+
+        /* inicio css Card*/
+        * {
+            box-sizing: border-box;
+        }
+  
+        .carousel {
+  position: relative;
+}
+
+.carousel.pointer-event {
+  touch-action: pan-y;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-inner::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-item {
+    transition: none;
+  }
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev {
+  display: block;
+}
+
+.carousel-item-next:not(.carousel-item-start),
+.active.carousel-item-end {
+  transform: translateX(100%);
+}
+
+.carousel-item-prev:not(.carousel-item-end),
+.active.carousel-item-start {
+  transform: translateX(-100%);
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transform: none;
+}
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-start,
+.carousel-fade .carousel-item-prev.carousel-item-end {
+  z-index: 1;
+  opacity: 1;
+}
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0s 0.6s;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-fade .active.carousel-item-start,
+  .carousel-fade .active.carousel-item-end {
+    transition: none;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: none;
+  border: 0;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    transition: none;
+  }
+}
+.carousel-control-prev:hover, .carousel-control-prev:focus,
+.carousel-control-next:hover,
+.carousel-control-next:focus {
+  color: #fff;
+  text-decoration: none;
+  outline: 0;
+  opacity: 0.9;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e")*/;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") /*rtl:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e")*/;
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-right: 15%;
+  margin-bottom: 1rem;
+  margin-left: 15%;
+}
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  /*alterar a cor do indicador do slide*/
+  background-color:#C9B371;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  transition: 0.6s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-indicators [data-bs-target] {
+    transition: none;
+  }
+}
+.carousel-indicators .active {
+    /*alterar a cor do indicador do slide quando estiver ativo*/
+    background-color: #907F50;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+  left: 15%;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  color: #C9B371;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+
+.carousel-dark .carousel-control-prev-icon,
+.carousel-dark .carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+.carousel-dark .carousel-caption {
+  color: #000;
+}
+
+[data-bs-theme=dark] .carousel .carousel-control-prev-icon,
+[data-bs-theme=dark] .carousel .carousel-control-next-icon, [data-bs-theme=dark].carousel .carousel-control-prev-icon,
+[data-bs-theme=dark].carousel .carousel-control-next-icon {
+  filter: invert(1) grayscale(100);
+}
+[data-bs-theme=dark] .carousel .carousel-indicators [data-bs-target], [data-bs-theme=dark].carousel .carousel-indicators [data-bs-target] {
+  background-color: #000;
+}
+[data-bs-theme=dark] .carousel .carousel-caption, [data-bs-theme=dark].carousel .carousel-caption {
+  color: #000;
+}
+
+@media (max-width: 792px) {
+    .carousel-caption {
+        position: absolute;
+        right: 15%;
+        bottom: 10%;
+        left: 15%;
+        padding-top: 20%;
+        padding-bottom: 5%;
+        color: #C9B371;
+        text-align: center;
+    
+    }
+}
+
+    </style>
+
+    </head>
+    <body>
+
+
+    <nav class="navbar navbar-inverse" style="background:121412; color: azure;">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Carro</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#"></a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li style="color: azure;"><a href="https://youtube.com.br" target="_blank"><span class=""><i class="bi bi-youtube"></i> Youtube</span> </a></li>
+                <li style="color: azure;"><a href="https://instagram.com.br" target="_blank"><span class=""><i class="bi bi-instagram"></i> Instagram</span> </a></li>   
+                </ul>
+                </div>
+                </div>
+                </nav>
+                
+                <!--Inínio do Slide-->
+                <div id="meuSlide" class="carousel slide" data-bs-ride="carousel">
+                
+                  <!--Indicators/dots-->
+                  <div class="carousel-indicators meuSlide-indicators">
+                    <li data-bs-target="#meuSlide" data-bs-slide-to="0" class="active" ></i class="bi  bi-dash"></i></li>
+                    <li data-bs-target="#meuSlide" data-bs-slide-to="1"></i class="bi bi-dash"></i></li>
+                    <li data-bs-target="#meuSlide" data-bs-slide-to="2"></i class="bi bi-dash"></i></li>
+                    
+                    </div>
+
+                    <!--the slideshow/carousel-->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="slide1.jpg" alt="" class="d-block" style="width:100%">
+                        <!--pode ignorar Arhur
+      <div class="carousel-caption">
+        <h3 style="color: #C9B371;">Los Angeles</h3>
+        <button class="slide-button">Primeira Acessoria Grátis</button>      
+      </div>-->
+      </div>
+      <div class="carousel-item">
+        <img src="slide2.jpg" alt="" class="d-block" style="width:100%">
+               <!--pode ignorar Arhur
+      <div class="carousel-caption">
+        <h3 style="color: #C9B371;">Los Angeles</h3>
+        <button class="slide-button">Primeira Acessoria Grátis</button>
+      </div>-->
+      </div>
+      <!--colocar mais um carosel-item arthur porque vooce tem 3 slides-->
+      <div class="carousel-item">
+        <img src="slide3.jpg" alt="" class="d-block" style="width:100%">
+               <!--pode ignorar Arhur
+      <div class="carousel-caption">
+        <h3 style="color: #C9B371;">Los Angeles</h3>
+        <button class="slide-button">Primeira Acessoria Grátis</button>
+      </div>-->
+      </div>
+      </div>
+
+      <!--Left and right controls/icons-->
+      <button class="carousel-control-prev" type="button" data-bs-target="#meuSlide"  data-bs-slide="prev"></button>"
+      <span  style="color: red"><i class="bi bi-chevron-left "></i></span>
+    </button>
+    <button class="carousel-control-next gold" type="button"  data-bs-target="#meuSlide" data-bs-slide="next"></button>
+    <span  style="color: red"><i class="bi bi-chevron-right"></i></span>
+  </button>
+  </div>
+
+  </body>
+  </html>
+
+            
+                <div class="jumbotron">
+                    <div class="container text-center">
+                      <h1>Toyota</h1>      
+                      <p>Esse site mostra os carros desta marca</p>
+                    </div>
+                  </div>
+                  
+                  <section id="sobre" class="container-fluid bg-3 text-center">
+                   <h2>Carros da Toyota</h2>
+                    <p>Kiichiro Toyoda, fundador da Toyota, em 1935 construiu o primeiro veiculo motorizado do Japão apresentando ao mundo o protótipo A1 e em 1937 inaugurou a Toyota Motor Company.</p>
+                    <p>E desde 1936 até 2024 a empresa ja criou ja foram criados 11 modelos de carro da marca, sendo Toyota Camry, Corolla, Corolla Cross, Etios, Etios Sedã, Hilux, Prius, RAV4, SW4, Yaris Hatch e Yaris Sedan.</p>
+                    <p>Nesta página você poderá ver fotos e videos dos modelos de carro da Toyota.</p>
+                  </section>
+                  <div  style=" margin-left: 32%; margin-right: 50%;" >
+                    <iframe  width="560" height="315" src="https://www.youtube.com/embed/tKqq6SAb_1M?si=RZE1oVvaNM29QUir" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                  
+                  
+                  <div class="container-fluid bg-3 text-center">    
+                    <h3>Galeria de fotos</h3><br>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <p>Toyota Supra</p>
+                        <img src="https://wallpapers.com/images/featured/toyota-supra-4k-3vpo6s8g2wq8xitp.webp" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                      <div class="col-sm-6">
+                        <p>Toyota Super Street Corolla</p>
+                        <img src="https://www.hdcarwallpapers.com/walls/toyota_super_street_corolla_4k-HD.jpg" class="img-responsive" style="width:100%" alt="Image">
+                      </div>
+                       
+                    </div>
+                  </div><br>
+                  
+                  
+                  <div class="container-fluid bg-3 text-center">    
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <p>Toyota Corolla Cross</p>
+                        <img src="1.jpg"  class="img-responsive" style="width:100%" alt="Image" >
+                      </div>
+                      <div class="col-sm-3">
+                        <p>Toyota Prius</p>
+                        <img src="2.jpg" style="width:100%" alt="image">
+                      </div>
+                      <div class="col-sm-3">
+                        <p>Toyota Yaris Sedan</p>
+                        <img src="3.jpg" class="img-responsive" style="width:100%" alt="image" >
+                      </div>
+                      <div class="col-sm-3">
+                        <p>Toyota Hilux</p>
+                        <img src="4.jpg" class="img-responsive" style="width:100%" alt="Image" >
+                      </div>
+                    </div>
+                  </div><br><br>
+                  
+                  <section id="contato">
+                <footer class="site-footer">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm-12 col-md col-lg col-sx-12">
+                    <br><br>
+                    <h3 class="text-center">CONTATO</h3>
+                    <br>
+                    <br>
+                    <p style="color:#fff;" class="text-justify text center"><i class="fa fa-map-market"></i> SP-Brasil</p>
+                    <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.6332345583783!2d-46.59575942489035!3d-23.581612478785928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5d0079f3cb8d%3A0x149d96987ad535bc!2sShopping%20mooca!5e0!3m2!1spt-PT!2sbr!4v1719875493713!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <br><br>
+                  </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <h6 class="text-center">Email</h6>
+                      <p class="text-center"><a href="mailto:contato@sitecarro.com.brsubject=Olá!%20email%20do%site.">contato@sitecarro.com.br</a></p>
+                  </div>
+                    
+
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                      <h6 class="text-center">Telefone</h6>
+                      <p class="text-center"><a href="tel:+552199999" target="blank">(21) 99999999</a></p>
+
+                  </div>
+
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                      <h6 class="text-center">CNPJ: 999.999.999/0001-99</h6>
+                      </div>
+                      </div>
+                      <hr class="branco">
+                      </div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p style="color:#fff;" class="copyrigjt-text">Site Toyota © 2024</p>
+                            <p style="color:#fff;"> Desenvolvido por <a href="https://github.com/artursaade"  target="_blank">Artur Saade</a>.</p>
+                </div></div></div>
+              
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+              </li><a style="color:#006633;" class="facebook"
+              href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram ">
+                </i></a></li>
+                <li><a style="color:006633;" class="twitter"
+                  href="https://twitter.com/" target="_blank"><i class="fa fa-twitter "></i></a>
+                  </li>
+                  <li><a style="color:#006633;" class="linkedin"
+                    href="https://www.linkedin.com/" target="_blank"><i class="linkedin"></i>
+                  </i></a></li>
+                  </ul>
+                  </div>
+                  </div>
+                  </div>
+                </footer>
+              </section>
+
+                  
+                  <footer class="container-fluid text-center">
+                    <p>Desenvolvido por Artur Saade</p>
+                  </footer>
+                  
+                  
+                  </body>
+                  </html>
+                
